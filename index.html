@@ -1,81 +1,900 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoneyPilot Legal Center</title>
-  <meta name="description" content="Official legal documentation, privacy policy, and terms of service for the MoneyPilot personal finance application.">
-  <link rel="stylesheet" href="index.css">
+  <title>MoneyPilot — Take Control of Your Money</title>
+  <meta name="description" content="Track expenses, manage budgets, monitor investments, calculate EMIs, and gain offline AI-powered financial insights with MoneyPilot personal finance app.">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MoneyPilot — Take Control of Your Money">
+  <meta property="og:description" content="Track expenses, manage budgets, monitor investments, calculate EMIs, and gain offline AI-powered financial insights with MoneyPilot.">
+  <meta property="og:image" content="https://vennamprasad1005.github.io/moneypilot-legal/assets/og-image.png">
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo" id="header-logo">
-        <span class="logo-icon" aria-hidden="true">M</span>
+  <!-- Site Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#" class="logo-link" id="logo-brand">
+        <div class="logo-icon-container" aria-hidden="true">M</div>
         MoneyPilot
       </a>
+      
+      <nav aria-label="Main Navigation">
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <!-- Hamburger icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#features" class="nav-link" id="nav-features">Features</a></li>
+          <li><a href="#analytics" class="nav-link" id="nav-analytics">Analytics</a></li>
+          <li><a href="#why-pilot" class="nav-link" id="nav-why-pilot">Why Us</a></li>
+          <li><a href="#screenshots" class="nav-link" id="nav-screenshots">Screenshots</a></li>
+          <li><a href="#faqs" class="nav-link" id="nav-faqs">FAQs</a></li>
+          <li class="nav-actions">
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+              <!-- Moon Icon (Dark Mode active, clicking switches to light) -->
+              <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+              <!-- Sun Icon (Light Mode active, clicking switches to dark) -->
+              <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </button>
+            <a href="#download" class="btn btn-primary" id="btn-header-download">Download</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="portal-hero">
-      <h1 class="portal-title" id="page-heading">Legal Agreements</h1>
-      <p class="portal-subtitle">Review the privacy policies, data usage practices, and terms governing your use of the MoneyPilot application.</p>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="pulse-dot" aria-hidden="true" style="width:8px;height:8px;background:var(--accent-indigo);border-radius:50%;display:inline-block;animation:pulse 2s infinite"></span>
+            Android Offline-First Finance App
+          </div>
+          <h1 class="hero-title gradient-title">Take Control of Your Money.</h1>
+          <p class="hero-subtitle">Track expenses, manage budgets, monitor investments, calculate EMIs, and gain AI-powered financial insights — all in one place. MoneyPilot runs securely on your device, ensuring total privacy.</p>
+          
+          <div class="hero-ctas">
+            <a href="#download" class="google-play-badge" id="hero-badge-download">
+              <!-- Google Play Icon SVG -->
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#00e5ff" d="M32.5 17.5v477l242.3-238.5z"/>
+                <path fill="#ffeb3b" d="M371.4 122.9l-96.6 95.1 97 95.6 107.7-61.2c28.2-16 28.2-42.3 0-58.3z"/>
+                <path fill="#ff1744" d="M32.5 17.5l242.3 238.5 96.6-95.1-306.4-174.2c-16-9.1-32.5-9.1-32.5 10.8z"/>
+                <path fill="#00e676" d="M32.5 494.5c0 19.9 16.5 19.9 32.5 10.8l306.4-174.2-97-95.6z"/>
+              </svg>
+              <div class="badge-text">
+                <span class="small">Get it on</span>
+                <span class="large">Google Play</span>
+              </div>
+            </a>
+            <a href="#features" class="btn btn-secondary" id="btn-hero-learn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Dynamic CSS Phone Mockup showing Dashboard Preview -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-glow" aria-hidden="true"></div>
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            
+            <div class="phone-status-bar" aria-hidden="true">
+              <span class="phone-time">09:41</span>
+              <div class="phone-status-icons">
+                <!-- WiFi Icon -->
+                <svg viewBox="0 0 24 24"><path d="M12 21l-12-12c5.07-5.07 13.93-5.07 19 0l-7 12z"/></svg>
+                <!-- Battery Icon -->
+                <svg viewBox="0 0 24 24"><rect x="1" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="20" y="9" width="3" height="6" rx="1" fill="currentColor"/></svg>
+              </div>
+            </div>
+
+            <div class="phone-screen">
+              <div class="phone-header">
+                <div class="phone-user">
+                  <div class="phone-avatar">PV</div>
+                  <span class="phone-username">Pilot Prasad</span>
+                </div>
+                <div class="phone-bell" aria-label="Notifications">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                </div>
+              </div>
+
+              <!-- Balance Card -->
+              <div class="phone-balance-card">
+                <div class="phone-balance-label">Net Balance</div>
+                <div class="phone-balance-amount">$12,450.80</div>
+                <div class="phone-balance-trend">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                  +8.4% vs last month
+                </div>
+              </div>
+
+              <!-- Action Items -->
+              <div class="phone-actions-grid">
+                <div class="phone-action-item">
+                  <div class="phone-action-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="3" height="3"/><rect x="14" y="7" width="3" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+                  </div>
+                  <span class="phone-action-label">Scan</span>
+                </div>
+                <div class="phone-action-item">
+                  <div class="phone-action-icon" style="color:var(--accent-emerald)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                  </div>
+                  <span class="phone-action-label">Invest</span>
+                </div>
+                <div class="phone-action-item">
+                  <div class="phone-action-icon" style="color:var(--accent-gold)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </div>
+                  <span class="phone-action-label">Budget</span>
+                </div>
+                <div class="phone-action-item">
+                  <div class="phone-action-icon" style="color:var(--accent-coral)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                  </div>
+                  <span class="phone-action-label">EMI</span>
+                </div>
+              </div>
+
+              <!-- Budget Progress -->
+              <div class="phone-budget-alert">
+                <div class="phone-budget-info">
+                  <span>Monthly Budget Limit</span>
+                  <span>62% used</span>
+                </div>
+                <div class="phone-progress-bar">
+                  <div class="phone-progress-fill"></div>
+                </div>
+              </div>
+
+              <!-- Transactions -->
+              <div class="phone-section-title">
+                <span>Recent Expenses</span>
+                <span class="phone-section-more">View All</span>
+              </div>
+              <div class="phone-tx-list">
+                <div class="phone-tx-item">
+                  <div class="phone-tx-detail">
+                    <div class="phone-tx-icon-box" style="background:rgba(244,63,94,0.1);color:var(--accent-coral)">☕</div>
+                    <div class="phone-tx-meta">
+                      <span class="phone-tx-title">Starbucks Coffee</span>
+                      <span class="phone-tx-date">Today, 08:32 AM</span>
+                    </div>
+                  </div>
+                  <span class="phone-tx-amount neg">-$5.50</span>
+                </div>
+                <div class="phone-tx-item">
+                  <div class="phone-tx-detail">
+                    <div class="phone-tx-icon-box" style="background:rgba(16,185,129,0.1);color:var(--accent-emerald)">🚕</div>
+                    <div class="phone-tx-meta">
+                      <span class="phone-tx-title">Uber Ride</span>
+                      <span class="phone-tx-date">Yesterday, 07:15 PM</span>
+                    </div>
+                  </div>
+                  <span class="phone-tx-amount neg">-$18.40</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="portal-grid" role="navigation" aria-label="Legal documents">
-      <!-- Privacy Policy Card -->
-      <a href="privacy-policy.html" class="portal-card" id="card-privacy-policy">
-        <div class="card-icon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M12 8v4"/>
-            <path d="M12 16h.01"/>
-          </svg>
+    <!-- FEATURES SECTION -->
+    <section class="section-padding" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Powerful Utilities</span>
+          <h2 class="section-title gradient-title">Engineered For Wealth Management</h2>
+          <p class="section-subtitle">A dashboard that adapts to your workflow. Fully offline capability ensures that your credentials and transactional details never leave your device.</p>
         </div>
-        <h2 class="card-title">Privacy Policy</h2>
-        <p class="card-desc">Understand how we collect, store, secure, and handle your financial information and personal data within MoneyPilot.</p>
-        <span class="card-link">
-          Read Privacy Policy
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </span>
-      </a>
 
-      <!-- Terms of Service Card -->
-      <a href="terms-of-service.html" class="portal-card" id="card-terms-of-service">
-        <div class="card-icon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-            <polyline points="14 2 14 8 20 8"></polyline>
-            <line x1="16" y1="13" x2="8" y2="13"></line>
-            <line x1="16" y1="17" x2="8" y2="17"></line>
-            <polyline points="10 9 9 9 8 9"></polyline>
-          </svg>
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card" id="feat-expenses">
+            <div class="feature-icon-box" aria-hidden="true">💰</div>
+            <h3>Expense Tracking</h3>
+            <p>Track daily expenses and income with smart categorization. Log cash transactions instantly with automatic offline backup.</p>
+          </article>
+          <!-- Card 2 -->
+          <article class="feature-card" id="feat-budgets">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-gold);background:rgba(245,158,11,0.08)">📊</div>
+            <h3>Budget Planning</h3>
+            <p>Set budgets and monitor spending progress. Receive clean, non-intrusive notifications before you overshoot your limits.</p>
+          </article>
+          <!-- Card 3 -->
+          <article class="feature-card" id="feat-portfolio">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-emerald);background:rgba(16,185,129,0.08)">📈</div>
+            <h3>Investment Portfolio</h3>
+            <p>Track stocks, mutual funds, crypto, gold, and real estate. Real-time net worth calculation from a consolidated view.</p>
+          </article>
+          <!-- Card 4 -->
+          <article class="feature-card" id="feat-loans">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-coral);background:rgba(244,63,94,0.08)">🏦</div>
+            <h3>Loan Management</h3>
+            <p>Monitor active loans, interest rates, EMI dates, and payoff timelines. Generate clear amortization schedules automatically.</p>
+          </article>
+          <!-- Card 5 -->
+          <article class="feature-card" id="feat-ai">
+            <div class="feature-icon-box" aria-hidden="true">🤖</div>
+            <h3>AI Copilot</h3>
+            <p>Your local, offline AI assistant. Receive smart saving suggestions and financial analytics based strictly on your local logs.</p>
+          </article>
+          <!-- Card 6 -->
+          <article class="feature-card" id="feat-ocr">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-emerald);background:rgba(16,185,129,0.08)">📸</div>
+            <h3>Receipt Scanner</h3>
+            <p>Scan invoices and receipts using on-device OCR. Extracts merchant, date, and final totals to log transactions instantly.</p>
+          </article>
+          <!-- Card 7 -->
+          <article class="feature-card" id="feat-sync">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-gold);background:rgba(245,158,11,0.08)">☁️</div>
+            <h3>Google Sheets Sync</h3>
+            <p>Ensure data longevity. Export and link your local database to a secure, private Google Sheet file owned entirely by you.</p>
+          </article>
+          <!-- Card 8 -->
+          <article class="feature-card" id="feat-biometrics">
+            <div class="feature-icon-box" aria-hidden="true" style="color:var(--accent-coral);background:rgba(244,63,94,0.08)">🔒</div>
+            <h3>Biometric Security</h3>
+            <p>Protect your private financial dashboard. Secured by native Android fingerprint validation and local hardware keystores.</p>
+          </article>
         </div>
-        <h2 class="card-title">Terms of Service</h2>
-        <p class="card-desc">Review the terms, agreements, rules, and disclaimers associated with utilizing the tracking features of MoneyPilot.</p>
-        <span class="card-link">
-          Read Terms of Service
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </span>
-      </a>
-    </div>
+      </div>
+    </section>
+
+    <!-- ANALYTICS SECTION -->
+    <section class="section-padding" id="analytics" style="position:relative">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Analytics</span>
+          <h2 class="section-title gradient-title">Visualize Your Wealth</h2>
+          <p class="section-subtitle">Real-time calculations that help you spot habits immediately. Set goals and monitor your savings trajectory.</p>
+        </div>
+
+        <div class="analytics-grid">
+          <!-- Progress Bars Card -->
+          <div class="analytics-main-card">
+            <h3>Monthly Financial Indicators</h3>
+            <p style="margin-bottom:1.5rem">Calculations automatically refreshed based on actual transaction categories.</p>
+            
+            <div class="analytics-list">
+              <!-- Item 1 -->
+              <div class="analytics-item">
+                <div class="analytics-meta">
+                  <span class="analytics-label">💵 Monthly Spending Limit</span>
+                  <span class="analytics-val"><span class="animate-val" data-target="1450">$0</span> / $2,500</span>
+                </div>
+                <div class="analytics-progress">
+                  <div class="analytics-fill fill-indigo" data-width="58%"></div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="analytics-item">
+                <div class="analytics-meta">
+                  <span class="analytics-label">🎯 Savings Target Met</span>
+                  <span class="analytics-val"><span class="animate-val" data-target="42">0</span>%</span>
+                </div>
+                <div class="analytics-progress">
+                  <div class="analytics-fill fill-emerald" data-width="42%"></div>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="analytics-item">
+                <div class="analytics-meta">
+                  <span class="analytics-label">💳 Credit Card Utilization</span>
+                  <span class="analytics-val"><span class="animate-val" data-target="18">0</span>%</span>
+                </div>
+                <div class="analytics-progress">
+                  <div class="analytics-fill fill-gold" data-width="18%"></div>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="analytics-item">
+                <div class="analytics-meta">
+                  <span class="analytics-label">📉 Loan Reduction Progress</span>
+                  <span class="analytics-val"><span class="animate-val" data-target="65">0</span>% paid</span>
+                </div>
+                <div class="analytics-progress">
+                  <div class="analytics-fill fill-coral" data-width="65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SVG Chart Card -->
+          <div class="analytics-chart-card">
+            <div class="chart-header">
+              <div class="chart-value-box">
+                <span class="chart-value-label">Investment Growth</span>
+                <span class="chart-value-amount">$<span class="animate-val" data-target="24560">0</span></span>
+              </div>
+              <span class="chart-badge">+18.5% YoY</span>
+            </div>
+            
+            <div class="svg-chart-container" aria-label="Line graph showing investment growth over the past 6 months">
+              <svg viewBox="0 0 500 200" preserveAspectRatio="none">
+                <defs>
+                  <!-- Gradient for chart stroke -->
+                  <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="var(--accent-indigo)" />
+                    <stop offset="100%" stop-color="var(--accent-emerald)" />
+                  </linearGradient>
+                  <!-- Gradient for filled area -->
+                  <linearGradient id="area-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="var(--accent-indigo)" stop-opacity="0.3" />
+                    <stop offset="100%" stop-color="var(--bg-primary)" stop-opacity="0" />
+                  </linearGradient>
+                  <!-- Clip Path to match chart stroke -->
+                  <clipPath id="chart-clip">
+                    <polygon points="0,200 0,160 100,140 200,90 300,105 400,60 500,30 500,200" />
+                  </clipPath>
+                </defs>
+                
+                <!-- Grid Lines -->
+                <line class="chart-grid-line" x1="0" y1="50" x2="500" y2="50" />
+                <line class="chart-grid-line" x1="0" y1="100" x2="500" y2="100" />
+                <line class="chart-grid-line" x1="0" y1="150" x2="500" y2="150" />
+                
+                <!-- Area fill -->
+                <polygon class="chart-area" points="0,200 0,160 100,140 200,90 300,105 400,60 500,30 500,200" />
+                
+                <!-- Chart Stroke Line -->
+                <path class="chart-path" d="M0,160 L100,140 L200,90 L300,105 L400,60 L500,30" />
+              </svg>
+              
+              <div class="chart-labels">
+                <span>Jan</span>
+                <span>Feb</span>
+                <span>Mar</span>
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY MONEYPILOT SECTION -->
+    <section class="section-padding" id="why-pilot">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Designed Differently</span>
+          <h2 class="section-title gradient-title">Why Pilot Your Finances With Us?</h2>
+          <p class="section-subtitle">Unlike cloud-dependent apps that scan your emails, sell your data, or tie you down to a single ecosystem, MoneyPilot is built for complete financial freedom.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Why Item 1 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">🔒</div>
+            <div>
+              <h3>Privacy First Architecture</h3>
+              <p>Your bank syncs and data tables stay in an encrypted database sandbox on your device. We do not run cloud analytics servers.</p>
+            </div>
+          </div>
+          <!-- Why Item 2 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">🧠</div>
+            <div>
+              <h3>Offline local AI Copilot</h3>
+              <p>On-device LLMs run directly on your smartphone to analyze patterns, calculate budgets, and answer tax inquiries without internet access.</p>
+            </div>
+          </div>
+          <!-- Why Item 3 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">🔓</div>
+            <div>
+              <h3>Zero Vendor Lock-in</h3>
+              <p>Your entries belong to you. Export the complete database file as raw SQLite or CSV format anytime with a single tap.</p>
+            </div>
+          </div>
+          <!-- Why Item 4 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">☁️</div>
+            <div>
+              <h3>Secure Sheets Backup</h3>
+              <p>Optionally bind database rows to your personal Google Drive spreadsheet. No intermediaries, no third-party APIs.</p>
+            </div>
+          </div>
+          <!-- Why Item 5 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">🌍</div>
+            <div>
+              <h3>Multi-Currency Support</h3>
+              <p>Track assets and liabilities in multiple global currencies. Automatic offline lookup converts base currency balances smoothly.</p>
+            </div>
+          </div>
+          <!-- Why Item 6 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">📱</div>
+            <div>
+              <h3>Material Design 3 Experience</h3>
+              <p>Dynamic dynamic color matching, smooth system animations, and tactile feedback built to match the modern Android design language.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS SECTION -->
+    <section class="section-padding" id="screenshots" style="background:var(--bg-secondary); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interface Walkthrough</span>
+          <h2 class="section-title gradient-title">Sleek, Responsive UI</h2>
+          <p class="section-subtitle">Swipe through key interfaces of the app. Every dashboard visual is custom-optimized to offer maximum information with minimum clutter.</p>
+        </div>
+
+        <div class="screenshots-container">
+          <div class="scroller-wrapper">
+            <div class="scroller" role="region" aria-label="App screenshot gallery">
+              
+              <!-- Slide 1: Dashboard -->
+              <div class="entry" id="slide-dashboard">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.75rem">
+                      <span class="phone-username" style="font-size:0.9rem">Dashboard Overview</span>
+                    </div>
+                    <div class="phone-balance-card" style="margin-bottom:1rem">
+                      <span class="phone-balance-label">Total Balance</span>
+                      <span class="phone-balance-amount" style="font-size:1.6rem">$12,450.80</span>
+                    </div>
+                    <!-- Quick charts -->
+                    <div class="phone-budget-alert" style="margin-bottom:1rem">
+                      <div class="phone-budget-info" style="font-size:0.7rem">
+                        <span>June Cash Flow</span>
+                        <span style="color:var(--accent-emerald)">+$2,450.00</span>
+                      </div>
+                      <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:75%;background:var(--accent-emerald)"></div></div>
+                    </div>
+                    <!-- Mock transaction lines -->
+                    <div class="phone-tx-list">
+                      <div class="phone-tx-item">
+                        <div class="phone-tx-detail">
+                          <span style="font-size:0.8rem">💼 Salary Credit</span>
+                        </div>
+                        <span class="phone-tx-amount pos">+$4,200.00</span>
+                      </div>
+                      <div class="phone-tx-item">
+                        <div class="phone-tx-detail">
+                          <span style="font-size:0.8rem">🏠 Rent Paid</span>
+                        </div>
+                        <span class="phone-tx-amount neg">-$1,200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Expenses -->
+              <div class="entry" id="slide-expenses">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.5rem">
+                      <span class="phone-username" style="font-size:0.9rem">Expenses Breakdown</span>
+                    </div>
+                    <!-- Ring chart preview -->
+                    <div class="phone-expense-chart">
+                      <svg width="100" height="100" viewBox="0 0 36 36">
+                        <!-- Background Circle -->
+                        <path stroke="rgba(255,255,255,0.05)" stroke-width="4" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <!-- Rent Section (Indigo) -->
+                        <path stroke="var(--accent-indigo)" stroke-width="4" stroke-dasharray="45, 100" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                        <!-- Food Section (Coral) -->
+                        <path stroke="var(--accent-coral)" stroke-width="4" stroke-dasharray="30, 100" stroke-dashoffset="-45" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                        <!-- Transp Section (Gold) -->
+                        <path stroke="var(--accent-gold)" stroke-width="4" stroke-dasharray="15, 100" stroke-dashoffset="-75" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831" />
+                      </svg>
+                      <div class="phone-expense-center">
+                        <span class="val">$1,850</span>
+                        <span class="lbl">Spent</span>
+                      </div>
+                    </div>
+                    <div class="phone-expense-legend">
+                      <div class="phone-legend-item"><span class="legend-color" style="background:var(--accent-indigo)"></span>Rent (45%)</div>
+                      <div class="phone-legend-item"><span class="legend-color" style="background:var(--accent-coral)"></span>Food (30%)</div>
+                      <div class="phone-legend-item"><span class="legend-color" style="background:var(--accent-gold)"></span>Travel (15%)</div>
+                      <div class="phone-legend-item"><span class="legend-color" style="background:var(--text-muted)"></span>Other (10%)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Budgets -->
+              <div class="entry" id="slide-budgets">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.75rem">
+                      <span class="phone-username" style="font-size:0.9rem">Budget Thresholds</span>
+                    </div>
+                    <!-- Budgets list -->
+                    <div style="display:flex;flex-direction:column;gap:12px">
+                      <div class="phone-budget-alert">
+                        <div class="phone-budget-info" style="font-size:0.75rem">
+                          <span>🍔 Food & Dining</span>
+                          <span style="font-weight:700">$340 / $500</span>
+                        </div>
+                        <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:68%;background:var(--accent-gold)"></div></div>
+                      </div>
+                      <div class="phone-budget-alert">
+                        <div class="phone-budget-info" style="font-size:0.75rem">
+                          <span>✈️ Travel Limit</span>
+                          <span style="font-weight:700">$120 / $400</span>
+                        </div>
+                        <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:30%;background:var(--accent-emerald)"></div></div>
+                      </div>
+                      <div class="phone-budget-alert">
+                        <div class="phone-budget-info" style="font-size:0.75rem">
+                          <span>🛍️ Shopping Budget</span>
+                          <span style="font-weight:700">$290 / $300</span>
+                        </div>
+                        <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:96%;background:var(--accent-coral)"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Investments -->
+              <div class="entry" id="slide-investments">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.75rem">
+                      <span class="phone-username" style="font-size:0.9rem">Portfolios</span>
+                    </div>
+                    <div class="phone-balance-card" style="margin-bottom:1rem;background:rgba(16,185,129,0.05)">
+                      <span class="phone-balance-label">Invested Assets</span>
+                      <span class="phone-balance-amount" style="font-size:1.6rem">$24,560.00</span>
+                    </div>
+                    <!-- Growth mini chart -->
+                    <div style="height:80px;margin-bottom:1rem">
+                      <svg viewBox="0 0 200 80" style="width:100%;height:100%">
+                        <path d="M0,70 L40,65 L80,50 L120,55 L160,35 L200,10" fill="none" stroke="var(--accent-emerald)" stroke-width="3"/>
+                        <path d="M0,70 L40,65 L80,50 L120,55 L160,35 L200,10 L200,80 L0,80" fill="rgba(16,185,129,0.08)"/>
+                      </svg>
+                    </div>
+                    <!-- Investment items -->
+                    <div class="phone-tx-list">
+                      <div class="phone-tx-item">
+                        <span style="font-size:0.75rem">🇺🇸 Mutual Funds</span>
+                        <span style="font-size:0.75rem;font-weight:700;color:var(--accent-emerald)">+$1,450.00</span>
+                      </div>
+                      <div class="phone-tx-item">
+                        <span style="font-size:0.75rem">🪙 Gold ETF</span>
+                        <span style="font-size:0.75rem;font-weight:700;color:var(--accent-emerald)">+$340.20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Loans -->
+              <div class="entry" id="slide-loans">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.75rem">
+                      <span class="phone-username" style="font-size:0.9rem">Active Loans</span>
+                    </div>
+                    <!-- Outstanding liabilities card -->
+                    <div class="phone-balance-card" style="margin-bottom:1rem;background:rgba(244,63,94,0.05)">
+                      <span class="phone-balance-label">Total Debt Remaining</span>
+                      <span class="phone-balance-amount" style="font-size:1.6rem">$12,500.00</span>
+                    </div>
+                    <div class="phone-budget-alert" style="margin-bottom:0.75rem">
+                      <div class="phone-budget-info" style="font-size:0.75rem">
+                        <span>🚗 Car Loan Payoff</span>
+                        <span>42% cleared</span>
+                      </div>
+                      <div class="phone-progress-bar"><div class="phone-progress-fill" style="width:42%;background:var(--accent-coral)"></div></div>
+                    </div>
+                    <div class="phone-tx-item">
+                      <div class="phone-tx-detail">
+                        <span style="font-size:0.75rem;font-weight:600">Next EMI Due</span>
+                        <span style="font-size:0.6rem;color:var(--text-muted);display:block">July 01, 2026</span>
+                      </div>
+                      <span style="font-size:0.75rem;font-weight:700">$340.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6: AI Copilot -->
+              <div class="entry" id="slide-ai">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="phone-header" style="margin-bottom:0.5rem">
+                      <span class="phone-username" style="font-size:0.9rem">AI Copilot</span>
+                    </div>
+                    <!-- Simulated chat screen -->
+                    <div class="phone-chat-container">
+                      <div class="chat-bubble ai">
+                        Hey Pilot, you spent 12% more on food this week compared to last. Adjust food budget limits or skip dining tags?
+                      </div>
+                      <div class="chat-bubble user">
+                        Analyze dining expenses for the past 30 days.
+                      </div>
+                      <div class="chat-bubble ai">
+                        Your major dining expenditure was on weekends, averaging $45 per meal. Reducing weekend dining tags can save you $120/mo.
+                        <div class="chat-bubble-actions">
+                          <button class="chat-action-btn">Reduce Limit</button>
+                          <button class="chat-action-btn">Dismiss Alert</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 7: Receipt Scanner -->
+              <div class="entry" id="slide-scanner">
+                <div class="phone-mockup">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen" style="position:relative;background:#030712;padding:0">
+                    
+                    <!-- Scanner mock background -->
+                    <div style="height:100%;width:100%;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;position:relative">
+                      <!-- Scanner visual cues -->
+                      <div style="border:2px dashed rgba(255,255,255,0.2);width:180px;height:240px;border-radius:8px;position:relative;display:flex;align-items:center;justify-content:center">
+                        <span style="color:rgba(255,255,255,0.3);font-size:0.7rem;text-align:center;padding:10px">Align receipt page inside target guidelines</span>
+                      </div>
+                    </div>
+                    
+                    <!-- Laser / scanning animations -->
+                    <div class="scanner-overlay">
+                      <div class="scanner-laser"></div>
+                      
+                      <!-- OCR recognition popout -->
+                      <div class="scanned-receipt-preview">
+                        <div style="display:flex;justify-content:between;font-weight:700;margin-bottom:4px">
+                          <span>🧾 Invoice Parsed</span>
+                          <span style="color:var(--accent-emerald)">Success</span>
+                        </div>
+                        <p style="margin:2px 0">Merchant: Trader Joe's</p>
+                        <p style="margin:2px 0">Total Amount: $42.50</p>
+                        <p style="margin:2px 0">Category Suggestion: Groceries</p>
+                        <button style="width:100%;background:var(--accent-emerald);color:#fff;border:none;border-radius:6px;padding:6px;font-weight:700;margin-top:6px;font-size:0.65rem;cursor:pointer">Save Transaction</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <!-- Indicators dots -->
+          <div class="scroller-controls" id="scroller-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">User Reviews</span>
+          <h2 class="section-title gradient-title">What Our Pilots Say</h2>
+          <p class="section-subtitle">Financial managers, casual builders, and tech lovers trust MoneyPilot to run their asset dashboards safely.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"As a privacy advocate, I refused to link my bank account to cloud apps. MoneyPilot works completely offline. The local OCR scanner parses my coffee receipts in seconds!"</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true" style="background:#4f46e5">AM</div>
+              <div class="author-info">
+                <h4>Alex Miller</h4>
+                <p>Privacy Advocate & Sysadmin</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"The Google Sheets sync features are absolutely genius. I get an offline Android database, and my personal sheet backs up silently in the background when I have WiFi."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true" style="background:#059669">SD</div>
+              <div class="author-info">
+                <h4>Sarah Davis</h4>
+                <p>Freelance Data Scientist</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">"Local AI analysis runs fast on my Pixel device. The budget triggers helped me reduce my dining out expenses by nearly 20% in the first month alone."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true" style="background:#d97706">KP</div>
+              <div class="author-info">
+                <h4>Kartik Patel</h4>
+                <p>Mobile App Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-padding" id="faqs" style="background:var(--bg-secondary); border-top:1px solid var(--border-color)">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Help Center</span>
+          <h2 class="section-title gradient-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Got questions about MoneyPilot? Learn more about the offline architecture, sync capabilities, and licensing models.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q1">
+              Is MoneyPilot free?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" aria-labelledby="faq-q1">
+              <p>Yes. MoneyPilot is fully open-source and free to download. Core tracking tools, local budgets, portfolio charts, and receipt scanning options are completely unlocked without subscription popups.</p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q2">
+              Does it work offline?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" aria-labelledby="faq-q2">
+              <p>Yes. MoneyPilot is designed as an offline-first app. Your transactions, budgets, local AI indexing, and scanner logs run entirely on your local storage system without internet requirements.</p>
+            </div>
+          </div>
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q3">
+              Is my data secure?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" aria-labelledby="faq-q3">
+              <p>Your financial database file is encrypted on-device. We do not store or scan your account information. MoneyPilot has no cloud databases, meaning you maintain absolute control over your private records.</p>
+            </div>
+          </div>
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q4">
+              How does Google Sheets sync work?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" aria-labelledby="faq-q4">
+              <p>Sync is established through direct Google API calls from your Android device straight to a designated spreadsheet file inside your Google Drive. No intermediary backend servers are used during the data transfer.</p>
+            </div>
+          </div>
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" id="faq-q5">
+              Does AI work without internet?
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" aria-labelledby="faq-q5">
+              <p>Yes. The AI Copilot uses specialized, quantized on-device neural network models that perform data processing directly on your phone's neural processing unit (NPU). No API tokens or servers needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD SECTION -->
+    <section class="download-section" id="download">
+      <div class="container">
+        <div class="download-banner">
+          <h2 class="gradient-title">Download MoneyPilot</h2>
+          <p>Ready to navigate your financial path? Download the offline personal finance assistant today and experience wealth management built with privacy first.</p>
+          
+          <div class="download-ctas">
+            <a href="https://play.google.com/store" class="google-play-badge" id="btn-banner-googleplay" target="_blank" rel="noopener noreferrer">
+              <!-- Google Play Icon SVG -->
+              <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#00e5ff" d="M32.5 17.5v477l242.3-238.5z"/>
+                <path fill="#ffeb3b" d="M371.4 122.9l-96.6 95.1 97 95.6 107.7-61.2c28.2-16 28.2-42.3 0-58.3z"/>
+                <path fill="#ff1744" d="M32.5 17.5l242.3 238.5 96.6-95.1-306.4-174.2c-16-9.1-32.5-9.1-32.5 10.8z"/>
+                <path fill="#00e676" d="M32.5 494.5c0 19.9 16.5 19.9 32.5 10.8l306.4-174.2-97-95.6z"/>
+              </svg>
+              <div class="badge-text">
+                <span class="small">Get it on</span>
+                <span class="large">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 MoneyPilot. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy-policy.html" class="footer-link" id="footer-privacy-policy">Privacy Policy</a>
-      <a href="terms-of-service.html" class="footer-link" id="footer-terms-of-service">Terms of Service</a>
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo-link" id="logo-footer">
+            <div class="logo-icon-container" aria-hidden="true">M</div>
+            MoneyPilot
+          </a>
+          <p class="footer-brand-desc">Personal wealth dashboard that prioritizes customer privacy. All calculation logs, indexes, and scanners run locally.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Legal Portal</h4>
+          <ul class="footer-links-list">
+            <li><a href="privacy-policy.html" id="footer-privacy">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" id="footer-terms">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Need Support?</h4>
+          <ul class="footer-links-list">
+            <li>Email: <a href="mailto:vennamprasad1005@gmail.com">vennamprasad1005@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 MoneyPilot. All rights reserved.</p>
+        <p>Built with Material Design 3 and privacy in mind.</p>
+      </div>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
